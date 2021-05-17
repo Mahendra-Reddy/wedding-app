@@ -1,0 +1,43 @@
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 12px;
+  height: 70px;
+  z-index: 2;
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
+}
+.nav__black {
+  background-color: #111;
+}
+.nav__logo {
+  position: fixed;
+  left: 35px;
+  width: 160px;
+  object-fit: contain;
+}
+.nav__avatar {
+  position: fixed;
+  right: 20px;
+  width: 30px;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+@media screen and (min-width: 300px) and (max-width: 767px){
+  .nav__logo_responsive {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+}
+
+/* @media screen and (min-width: 1150px){
+  .nav__logo {
+      margin-right: 25px;
+  } 
+} */
